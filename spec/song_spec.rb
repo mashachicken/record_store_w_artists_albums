@@ -9,6 +9,7 @@ describe '#Song' do
   before(:each) do
     Album.clear
     Song.clear
+    Artist.clear
     @album = Album.new({:name => "Giant Steps", :id => nil})
     @album.save()
   end

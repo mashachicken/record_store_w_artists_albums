@@ -9,6 +9,7 @@ describe '#Album' do
   before(:each) do
     Album.clear
     Song.clear
+    Artist.clear
   end
 
   describe('.all') do

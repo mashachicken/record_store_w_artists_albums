@@ -3,6 +3,7 @@ require 'pg'
 require 'album'
 require 'song'
 require 'pry'
+require ('artist')
 
 DB = PG.connect({:dbname => 'record_store_test'})
 
@@ -11,5 +12,6 @@ RSpec.configure do |config|
     DB.exec("DELETE FROM albums *;")
     DB.exec("DELETE FROM sold_albums *;")
     DB.exec("DELETE FROM songs *;")
+    DB.exec("DELETE FROM artists *;")
   end
 end
